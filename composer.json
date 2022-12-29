@@ -1,0 +1,23 @@
+{
+	"autoload":{
+		"psr-4":{
+			"core\\":"core/",
+            "moduls\\":"moduls/",
+			"database\\":"database/",
+			"library\\":"library/",
+            "middleware\\":"boot/middleware/"
+		},
+        "classmap":[
+            "core/",
+            "moduls/",
+            "database/",
+            "library/",
+            "boot/middleware/"
+        ]
+	},
+	"require": {
+        "vlucas/valitron": "^1.4",
+        "messagebird/php-rest-api": "^2.1",
+        "phpmailer/phpmailer": "^6.5"
+    }
+}

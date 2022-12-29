@@ -1,0 +1,37 @@
+
+{
+  "name": "190101101.com",
+  "short_name": "190101101",
+  "icons": [
+    {
+      "src": "/public/resources/files/system/pwa/img/x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/public/resources/files/system/pwa/img/x24.png",
+      "sizes": "24x24",
+      "type": "image/png"
+    },
+    {
+      "src": "/public/resources/files/system/pwa/img/x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/public/resources/files/system/pwa/img/x64.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "/public/resources/files/system/pwa/img/x128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#000",
+  "background_color": "#000",
+  "start_url": "/",
+  "display": "fullscreen",
+  "orientation": "portrait"
+}

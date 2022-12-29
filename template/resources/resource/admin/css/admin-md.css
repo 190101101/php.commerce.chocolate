@@ -1,0 +1,66 @@
+@media screen and (max-width: 767px){
+	.navbar-nav{
+		display: flex;
+		flex-direction: column !important; 
+	}
+}
+
+@media screen and (max-width: 400px){
+	.history{
+	    width: 340px;
+	    right: -340px;
+	}
+}
+
+@media screen and (min-width: 1051px){
+	.active.admin-sidebar{
+	    transform: translateX(-310px);
+	    transition: all 150ms linear;
+	}
+
+	.active.admin-page-content{
+	    margin-left: 0px;
+	    transition: all 150ms linear;
+	}
+}
+
+@media screen and (max-width: 1050px){
+	.admin-page-content{
+	    margin: 0px !important;
+	    width: 100%
+	}
+
+	.admin-sidebar{
+		transform: translateX(-317px) !important;
+    	transition: all 150ms linear;
+	}
+
+	.active.admin-sidebar{
+		transform: translateX(0px) !important;
+    	transition: all 150ms linear;
+	}
+}
+
+
+@media screen and (min-width: 768px){
+    .hamburger{
+        display: none;
+    }
+
+    .navbar{
+        height: 60px;
+    }
+}
+
+
+@media screen and (max-width: 967px){
+    .admin-update-table{
+        padding: 15px 10px;
+    }
+}
+
+@media screen and (max-width: 340px){
+	.general_form .form_box label{
+		display: none;
+	}
+}

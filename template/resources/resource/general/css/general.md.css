@@ -1,0 +1,18 @@
+@media screen and (max-width: 600px) {
+    .history{
+        right: -340px;
+        width: 340px;
+    }
+}
+
+@media screen and (min-width: 501px) {
+    .sidebar_search_box{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .navbar .search-box{
+        display: none;
+    }
+}

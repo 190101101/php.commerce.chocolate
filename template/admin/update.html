@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="../resources/files/system/svg/react.svg" type="image/png" sizes="20x20">
+        <link rel="stylesheet" href="../resources/resource/general/css/general.css">
+        <link rel="stylesheet" href="../resources/resource/admin/css/consts.css">
+        <link rel="stylesheet" href="../resources/resource/admin/css/admin.css">
+        <link rel="stylesheet" href="../resources/resource/admin/css/admin-md.css">
+        <link rel="stylesheet" href="../resources/resource/admin/css/table.css">
+        <link rel="stylesheet" href="../resources/resource/admin/css/toggle.css">
+        <link rel="stylesheet" href="../resources/resource/general/css/bootstrap.min.css">
+        <script src="../resources/resource/general/js/jquery-3.5.1.min.js"></script>
+        <script src="../resources/resource/general/ckeditor/ckeditor.js"></script>
+        <title>melancholic</title>
+    </head>
+    <body class="body">
+        <div id="wrapper">
+           <!-- history -->
+            <div class="history-brand history-btn">
+                <img src="../resources/files/system/svg/react.svg" class="history-logo">
+            </div>
+
+            <div class="history">
+                <div class="history-sidebar">
+                    <div class="history-sidebar-inner">
+                        <div id="history_html">        
+                            <div class="history-sidebar">
+                                <div class="history-sidebar-inner">
+                                    <div id="history_html">
+                                        <form class="history_form">
+                                            <div class="form_box">
+                                                <input type="file">
+                                            </div>
+
+                                            <div class="form_box">
+                                                <input type="text" placeholder="email">
+                                            </div>
+
+                                            <div class="form_box">
+                                                <input type="text" placeholder="username">
+                                            </div>
+
+                                            <div class="form_box">
+                                                <input type="text" placeholder="phone">
+                                            </div>
+
+                                            <div class="form_box">
+                                                <select>
+                                                    <option>freelancer</option>
+                                                    <option>work</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form_box">
+                                                <input type="text" placeholder="password">
+                                            </div>
+
+                                            <div class="form-editor">
+                                                <textarea id="historyeditor1"></textarea>
+                                                <script>CKEDITOR.replace('historyeditor1');</script>
+                                            </div>
+
+                                            <div class="form_box">
+                                                <button>click</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            
+        <nav class="navbar navbar-expand-md">
+            <a class="navbar-brand toggle-btn">
+            <img src="../resources/files/system/svg/react.svg" class="nav-logo">
+            </a>
+            <div class="site-head">
+                <span>crems</span>  
+            </div>
+            <button class="hamburger hamburger--elastic" id="hamburger" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mx-auto cubic-line">
+                    <li> 
+                        <a href="../index.html">
+                        <span>главная</span> 
+                        </a>
+                    </li>
+                    <li> 
+                        <a href="admin.html">
+                        <span>admin</span> 
+                        </a>
+                    </li>
+                    <li> 
+                        <a href="create.html">
+                        <span>create</span> 
+                        </a>
+                    </li>
+                    <li> 
+                        <a href="update.html" class="cubic">
+                        <span>update</span> 
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="wrap">
+            <div class="admin-content">
+                <div class="admin-inner-content">
+                    <div class="admin-sidebar">
+                        
+                            <div class="cat" id="sidebar">
+                                <ul class="cat-btn-ul">
+                                    <li class="cat-btn-li"> 
+                                        <a href="admin.html">
+                                        <span>КИБЕР</span>
+                                        <span>БЕЗОПАСНОСТЬ</span>
+                                        </a>
+                                        <span class="cat-circle"></span>
+                                    </li>
+                                    <li class="cat-btn-li">
+                                        <a href="admin.html">
+                                        <span>СОФТ ДЛЯ WINDOWS</span> 
+                                        </a>
+                                        <span class="cat-circle"></span>
+                                    </li>
+                                    <li class="cat-btn-li"> 
+                                        <a href="admin.html">
+                                        <span>РАЗРАБОТЧИКУ</span> 
+                                        </a>
+                                        <span class="cat-circle"></span>
+                                    </li>
+                                    <li class="cat-btn-li"> 
+                                        <a href="admin.html">
+                                        <span>История</span> 
+                                        </a>
+                                        <span class="cat-circle"></span>
+                                    </li>
+                                    <li class="cat-btn-li"> 
+                                        <a href="admin.html">
+                                        <span>все категории</span> 
+                                        </a>
+                                        <span class="cat-circle"></span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--  -->
+                            <div class="sign-content">
+                                <ul class="nav sidebar-option" role="tablist">
+                                    <li>
+                                        <a href="#profile" class="option">
+                                        <img src="../resources/files/system/svg/user.svg">
+                                        <span>admin</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#logout" class="option">
+                                        <img src="../resources/files/system/svg/logout.svg">
+                                        <span>sign out</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        
+                    </div>
+                    <div class="admin-page-content">
+                        <div class="admin-page-content-head">
+                            <ol class="admin-breadcrumb">
+                                <li><a href="#">home</a></li>
+                                <li><a href="#">all users</a></li>
+                                <li class="breadcrumb-active">create</li>
+                            </ol>
+                            <div class="add-block">
+                                <a href="admin.html"> <span>back</span></a>
+                            </div>
+                        </div>
+                        <div class="admin-form-tab">
+                            <ul class="nav nav-tab" role="tablist">
+                                <li>
+                                    <a href="../article.html">
+                                    <img src="../resources/files/system/svg/blog.svg">
+                                    <span>look</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#user" data-toggle="tab" role="tab">
+                                    <img src="../resources/files/system/svg/update.svg">
+                                    <span>user</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#files" data-toggle="tab" role="tab">
+                                    <img src="../resources/files/system/svg/file.svg">
+                                    <span>files</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="user">
+                                <form class="form">
+                                    <div class="form-box">
+                                        <div>
+                                            <img src="../resources/files/system/svg/folder.svg">
+                                        </div>
+                                        <div class="input-divide">
+                                            <input type="text" value="/resources/files/system/svg/email.svg">
+                                            <input type="file">
+                                        </div>
+                                    </div>
+                                    <div class="form-box">
+                                        <div>
+                                            <img src="../resources/files/system/svg/email.svg">
+                                        </div>
+                                        <div>
+                                            <input type="file">
+                                        </div>
+                                    </div>
+                                    <div class="form-box">
+                                        <div>
+                                            <img src="../resources/files/system/svg/email.svg">
+                                        </div>
+                                        <div>
+                                            <input type="text" placeholder="email">
+                                        </div>
+                                    </div>
+                                    <div class="form-box">
+                                        <div>
+                                            <img src="../resources/files/system/svg/user.svg">
+                                        </div>
+                                        <div>
+                                            <input type="text" placeholder="username">
+                                        </div>
+                                    </div>
+                                    <div class="form-box">
+                                        <div>
+                                            <img src="../resources/files/system/svg/phone.svg">
+                                        </div>
+                                        <div>
+                                            <input type="text" placeholder="phone">
+                                        </div>
+                                    </div>
+                                    <div class="form-box">
+                                        <div>
+                                            <img src="../resources/files/system/svg/user.svg">
+                                        </div>
+                                        <div>
+                                            <select>
+                                                <option>freelancer</option>
+                                                <option>work</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-editor">
+                                        <div>
+                                            <textarea id="editor1"></textarea>
+                                            <script>CKEDITOR.replace('editor1');</script>
+                                        </div>
+                                    </div>
+                                    <div class="form-box">
+                                        <div>
+                                            <img src="../resources/files/system/svg/blog.svg">
+                                        </div>
+                                        <div>
+                                            <button>click</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane" id="files">
+                                <div class="table-content">
+                                    <table id="tableview" class="table-media my-3">
+                                        <thead>
+                                            <tr>
+                                                <th class="th-update">
+                                                    <img src="../resources/files/system/svg/update.svg">
+                                                </th>
+                                                <th class="th-delete">
+                                                    <img src="../resources/files/system/svg/delete.svg">
+                                                </th>
+                                                <th>#</th>
+                                                <th>name</th>
+                                                <th>email</th>
+                                                <th>password</th>
+                                                <th>phone</th>
+                                                <th>age</th>
+                                                <th>status</th>
+                                                <th>auth</th>
+                                                <th class="th-look">
+                                                    <img src="../resources/files/system/svg/eye.svg">
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td aria-label='update'>
+                                                    <a href="update.html" >
+                                                    <img src="../resources/files/system/svg/update.svg">
+                                                    </a>
+                                                </td>
+                                                <td aria-label='delete'>
+                                                    <a href="delete.html">
+                                                    <img src="../resources/files/system/svg/delete.svg">
+                                                    </a>
+                                                </td>
+                                                <td aria-label='#'>19</td>
+                                                <td aria-label='name'>cookie</td>
+                                                <td aria-label='email'>cookie@gmail.com</td>
+                                                <td aria-label='password'>alloverme2002</td>
+                                                <td aria-label='phone'>+994519886699</td>
+                                                <td aria-label='look'>28</td>
+                                                <td aria-label='status' class="td-status">
+                                                    <label class="switch">
+                                                    <input type="checkbox" class="article-switch" checked>
+                                                    <span class="slider round"></span>
+                                                    </label>
+                                                </td>
+                                                <td aria-label='auth'>1</td>
+                                                <td aria-label='look'>
+                                                    <a href="../article.html" >
+                                                    <img src="../resources/files/system/svg/eye.svg">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-lower">
+                <div class="copyright">
+                    <span> © Copyright 2020 - <img src="../resources/files/system/svg/infinity.svg" width="30"></span>
+                    <span class="copyemail">
+                    <img src="../resources/files/system/svg/email.svg">
+                    <span>Web@Syphilis@gmail.com </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <script src="../resources/resource/general/js/bootstrap.min.js"></script>
+        <script src="../resources/resource/general/js/popper.min.js"></script>
+        <script src="../resources/resource/general/js/page.js"></script>
+        <script src="../resources/resource/general/bower/datatables.net/js/jquery.dataTables.min.js"></script>
+        <script src="../resources/resource/general/bower/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+        <script src="../resources/resource/admin/js/admin.js"></script>
+    </body>
+</html>

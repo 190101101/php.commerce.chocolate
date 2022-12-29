@@ -1,0 +1,413 @@
+<style>
+    
+/*profile*/
+.profile_content{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.profile_content:after{
+    content:  '';
+    width: 100%;
+    height: 14px;
+    position: absolute;
+    bottom: -50px;
+    background-image: url('../../files/system/content/line.png');
+}
+
+.edit-body-content{
+    width: 60%;
+    border:  2px solid #393a3b;
+}
+
+.edit-body-inner{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.edit-page-nav{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.edit-page-nav li{
+    padding: 5px 0;
+}
+
+
+.edit-page-nav li img{
+    width: 17px;
+}
+
+
+.edit-body-inner .tab-content{
+    width: 69%;
+}
+
+.edit-body-inner .tab-content .tab-pane{
+    width: 100%;
+}
+
+.profile_form .form-box{
+    margin: 5px 0;
+}
+
+.profile_form .form-box div{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.profile_form input{
+    background: none;
+    border:  2px solid #393a3b;
+    color: #C19F5F;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.profile_form input:focus,
+.profile_form input:active,
+.profile_form button:focus,
+.profile_form button:active{
+    outline: none;
+}
+
+.profile_form button{
+    background: none;
+    border:  1px solid #C19F5F;
+    color: #C19F5F;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+</style>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="resources/resource/css/general.css">
+        <link rel="stylesheet" href="resources/resource/css/main.css">
+        <link rel="stylesheet" href="resources/resource/css/media.md.css">
+        <link rel="stylesheet" href="resources/resource/css/media.xl.css">
+        <link rel="stylesheet" href="resources/resource/css/bootstrap.min.css">
+        <link rel="stylesheet" href="resources/resource/css/toggle.css">
+        <link rel="stylesheet" href="resources/resource/css/table.css">
+        <script src="resources/resource/js/jquery-3.5.1.min.js"></script>
+        <title>chocolate</title>
+    </head>
+    <body class="body">
+        <span id="scrolling"></span>
+        <div id="wrapper">
+            <nav class="navbar navbar-expand-lg navbar-bg-dark navbar-dark">
+                
+                 <a class="navbar-brand toggle-btn">
+                    <img src="resources/files/system/svg/react.svg" class="nav-logo" id="logo">
+                </a> 
+
+                  <div class="site-head">
+                    <span>crems</span>  
+                  </div>
+                <form class="search-box">
+                    <input type="text" name="" class="search-txt" placeholder="Что ищем?...вкладки, chrome,psd">
+                    <a class="search-btn">
+                        <img src="resources/files/system/svg/search.svg" class="nav-search-icon">
+                    </a>
+                </form>
+                <button class="hamburger hamburger--elastic" id="hamburger" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="hamburger-box ">
+                        <div class="hamburger-inner"></div>
+                    </div>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav cubic-line ml-auto">  
+                        <li> 
+                            <a href="index.html" class="cubic"> 
+                                <span>главная</span> 
+                            </a>
+                        </li>
+                        <li> 
+                            <a href="shop.html"> 
+                                <span>shop</span> 
+                            </a>
+                        </li>
+                        <li>
+                          <div class="btn-group">
+                              <button type="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                other
+                              </button>
+                              <div class="dropdown-menu dropdown-menu-right">
+                                <a href="product.html" class="dropdown-item" type="button">product</a>
+                                <a href="shop.html" class="dropdown-item" type="button">shop</a>
+                                <a href="profile.html" class="dropdown-item" type="button">profile</a>
+                                <a href="category.html" class="dropdown-item" type="button">category</a>
+                                <a href="blog.html" class="dropdown-item" type="button">blog</a>
+                                <a href="about.html" class="dropdown-item" type="button">about</a>
+                                <a href="gallery.html" class="dropdown-item" type="button">gallery</a>
+                                <a href="contact.html" class="dropdown-item" type="button">contact</a>
+                                <a href="register.html" class="dropdown-item" type="button">sign in</a>
+                                <a href="login.html" class="dropdown-item" type="button">sign up</a>
+                                <a href="#" class="dropdown-item" type="button">sign out</a>
+                                <a href="admin/admin.html" class="dropdown-item" type="button">admin</a>
+                              </div>
+                            </div>
+                        </li>
+                        <li> 
+                            <a href="cart.html" class="cart_counter_box"> 
+                                <span class="cart_counter">23</span>
+                                <img src="resources/files/system/svg/cart.svg">
+                            </a>
+                        </li> 
+                    </ul>
+                </div>
+            
+            </nav>
+            <div class="sidebar">
+                <div class="cat" id="sidebar">
+                    <div class="cat" id="sidebar">
+                        <ul class="cat-btn-ul">
+                            <li class="cat-btn-li"> 
+                                <img src="resources/files/system/svg/flame.svg" class="cat-img">
+                                <img src="resources/files/system/svg/flame.svg" class="filter">
+                                <a href="admin.html">
+                                <span>КИБЕР</span>
+                                <span>БЕЗОПАСНОСТЬ</span>
+                                </a>
+                                <span class="cat-circle"></span>
+                            </li>
+                            <li class="cat-btn-li">
+                                <img src="resources/files/system/svg/react.svg" class="cat-img">
+                                <img src="resources/files/system/svg/react.svg" class="filter">
+                                <a href="admin.html">
+                                <span>СОФТ ДЛЯ WINDOWS</span> 
+                                </a>
+                                <span class="cat-circle"></span>
+                            </li>
+                            <li class="cat-btn-li"> 
+                                <img src="resources/files/system/svg/design.svg" class="cat-img">
+                                <img src="resources/files/system/svg/design.svg" class="filter">
+                                <a href="admin.html">
+                                <span>РАЗРАБОТЧИКУ</span> 
+                                </a>
+                                <span class="cat-circle"></span>
+                            </li>
+                            <li class="cat-btn-li"> 
+                                <img src="resources/files/system/svg/slack.svg" class="cat-img">
+                                <img src="resources/files/system/svg/slack.svg" class="filter">
+                                <a href="admin.html">
+                                <span>История</span> 
+                                </a>
+                                <span class="cat-circle"></span>
+                            </li>
+                            <li class="cat-btn-li"> 
+                                <img src="resources/files/system/svg/category.svg" class="cat-img">
+                                <img src="resources/files/system/svg/category.svg" class="filter">
+                                <a href="admin.html">
+                                <span>все категории</span> 
+                                </a>
+                                <span class="cat-circle"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="wrap">
+                <div class="content">
+                    <div class="inner-content page-content inner-not-vh">
+                        <div class="page-container">
+                            <style>
+                                .page_head:before{
+                                background-image: url('resources/files/system/content/chocolate.jpg');
+                                }
+                            </style>
+                            <div class="page_head">
+                                <div class="page_head_title_box">
+                                    <span>Blog Three Columns</span>
+                                    <span>blog subtitle</span>
+                                </div>
+                            </div>
+                            <!-- qqq -->
+                            <div class="page_content">
+                                <div class="profile_content">
+                                    <div class="edit-body-content">
+                                        <div class="edit-body-inner">
+                                            <ul class="nav edit-page-nav" role="tablist">
+                                                <li>
+                                                    <a href="#tab_info" data-toggle="tab" role="tab">
+                                                        <img src="resources/files/system/svg/blog.svg">
+                                                        <span>ип | эмайл | логин</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#tab_password" data-toggle="tab" role="tab">
+                                                        <img src="resources/files/system/svg/blog.svg">
+                                                        <span>пароль</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <div class="tab-content">
+                                                <!--  -->
+                                                <div class="tab-pane active" id="tab_info">
+                                                    <form class="profile_form">
+                                                        <div class="form-box">
+                                                            <div>
+                                                                <input type="text" value="192.237.546.493" readonly>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-box">
+                                                            <div>
+                                                                <input type="text" value="cookie@gmail.com" readonly>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-box">
+                                                            <div>
+                                                                <input type="text" value="cookie" readonly>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-box">
+                                                            <div>
+                                                                <button>save</button>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+
+                                                <!--  -->
+                                                <div class="tab-pane" id="tab_password">
+                                                    <form class="profile_form">
+                                                        <div class="form-box">
+                                                            <div>
+                                                                <input type="text" placeholder="password">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-box">
+                                                            <div>
+                                                                <input type="text" placeholder="confirm password">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-box">
+                                                            <div>
+                                                                <button>save</button>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <!--  -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            
+            <div class="footer-upper">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="inner-footer-col-up">
+                                <div class="footer-brand">
+                                    <div class="footer-brand-left">
+                                        <img src="resources/files/system/svg/react.svg" class="footer-brand-logo">
+                                    </div>
+                                    <div class="footer-brand-right">
+                                        <span>Crems</span>
+                                        <span>craft delicious sweets</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="inner-footer-col-up-under">
+                                <span class="footer-down-txt"> Etiam consequat sem ullamcorper, euismod metus sit amet, tristique justo. Vestibulum mattis, nisi ut. </span>
+                                <div class="footer_link_box">
+                                    <a href="#" class="footer-link"> 
+                                        <img src="resources/files/system/svg/instagram.svg" class="footer-link-btn-svg">
+                                    </a>
+                                    <a href="#" class="footer-link"> 
+                                        <img src="resources/files/system/svg/facebook.svg" class="footer-link-btn-svg"> 
+                                    </a>
+                                    <a href="#" class="footer-link"> 
+                                        <img src="resources/files/system/svg/twitter.svg" class="footer-link-btn-svg"> 
+                                    </a>
+                                    <a href="#" class="footer-link"> 
+                                        <img src="resources/files/system/svg/youtube.svg" class="footer-link-btn-svg"> 
+                                    </a>
+                                    <a href="#" class="footer-link"> 
+                                        <img src="resources/files/system/svg/whatsapp.svg" class="footer-link-btn-svg">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <a href="#scrolling" id="arrow_upper">
+                                <img src="resources/files/system/svg/up-arrow.png">
+                            </a>
+
+                            <div class="footer-info">
+                                <span>Explore</span>
+                            </div>
+
+                            <div class="inner-footer-up-info">
+                                <div class="footer-box">
+                                    <div class="footer_box_inner">
+                                        <div>
+                                            <img src="resources/files/system/svg/phone.svg" width="25">
+                                        </div>
+                                        <div>
+                                            <span>Phone:</span>
+                                            <span>+994 999 99 99</span>
+                                        </div>
+                                    </div>
+                                    <div class="footer_box_inner">
+                                        <div>
+                                            <img src="resources/files/system/svg/location.svg" width="25">
+                                        </div>
+                                        <div>
+                                            <span>our location:</span>
+                                            <span>975 Liberty Ave, Union, NJ 07083, USA</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="footer_box_inner">
+                                        <div>
+                                            <img src="resources/files/system/svg/email.svg" width="25">
+                                        </div>
+                                        <div>
+                                            <span>email:</span>
+                                            <span>web@creams@gmail.com</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-lower">
+                <div class="copyright">
+                    <span> © Copyright 2022 </span>
+                </div>
+            </div>
+        
+        
+        </footer>
+        <script src="resources/resource/bower/datatables.net/js/jquery.dataTables.min.js"></script>
+        <script src="resources/resource/bower/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+        <script src="resources/resource/js/page.js"></script>
+        <script src="resources/resource/js/popper.min.js"></script>
+        <script src="resources/resource/js/bootstrap.min.js"></script>
+        <script src="resources/resource/js/main.js"></script>
+    </body>
+</html>

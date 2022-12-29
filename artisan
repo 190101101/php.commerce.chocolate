@@ -1,0 +1,2 @@
+<?php require_once 'boot/console/console.php'; ?>
+<?php new console($argv); ?>
